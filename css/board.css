@@ -1,0 +1,17 @@
+/* sec-content */
+.sec-content{padding:30px 0 40px 0}
+.sec-content .w-base{background-color:#fff;position:relative;padding-bottom:60px}
+.sec-snb{width:250px;position:absolute}
+.sec-cont{width:1200px;padding-left:290px;min-height:900px;box-sizing:border-box}
+
+.sec-banner{height:80px;border-top:1px solid #dedee0;border-bottom:1px solid #dedee0}
+ 
+
+.sec-snb .sec-tit{background:url('../images/snb_h2.jpg') center top repeat;height:145px;line-height:145px}
+.sec-snb .sec-tit h2{font-size:35px;color:#fff;font-weight:400;font-family: 'Spoqa Han Sans';text-align:center}
+
+ 
+.sec-snb .mn-list{overflow:hidden;border-left:1px solid #e5e5e5;border-right:1px solid #e5e5e5 }
+.sec-snb .mn-list > ul > li > a{display:block;line-height:60px;height:60px;border-bottom:1px solid #e5e5e5;font-size:20px;font-family: 'Spoqa Han Sans';color:#414040;padding-left:13px} 
+.sec-snb .mn-list > ul > li.on > a{ color:#b8599d;}
+.sec-snb .mn-list > ul > li > a:hover{ color:#b8599d}
