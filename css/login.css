@@ -2,11 +2,16 @@
     font-size: 13px;
     line-height: 1.6;
 }
+#register .container form input {
+    margin-bottom: 20px;
+}
+
+
+
 .content {
     padding-top: 40px;
     padding-bottom: 40px;
 }
-
 .breadcrumbs {
     overflow: hidden;
     padding: 10px 0 6px;
@@ -20,6 +25,7 @@
 	border: solid 1px #eee;
 	box-shadow: 0 0 3px #eee;
 }
+
 
 /*Reg Header*/
 .reg-header {
@@ -47,7 +53,6 @@
     margin-top: 10px;
     margin-bottom: 10px;
 }
-
 .btn-u {
     border: 0;
     color: #fff;
