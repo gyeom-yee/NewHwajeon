@@ -4,7 +4,6 @@
     -ms-user-select:none; 
     user-select:none
 }
-
 #board_main {
     display: flex;
     width: 1140px;
@@ -13,22 +12,60 @@
 
 
 /*board 사이드*/
+
+.board_side .list-group > h2 {
+    display: inline-block;
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    padding: 16px 23px;
+    line-height: 42px;
+    vertical-align: middle;
+}
+.board_side .list-group > h3 {
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    padding: 16px 23px;
+    vertical-align: middle;
+}
+.board_side .list-group h2 span {
+    display: block;
+    font-size: 15px;
+    font-weight: 100;
+    color: #98a1b4;
+    line-height: 20px;
+    margin-bottom: 4px;
+}
+.board_side .list-group h3 span {
+    display: block;
+    font-size: 15px;
+    font-weight: 100;
+    color: #98a1b4;
+    line-height: 20px;
+    margin-bottom: 4px;
+}
+
+
 .board_side {
     width: 200px;
     margin-right: 40px;
 }
 .board_side .list-group-item-heading {
-    text-align: center;
-    line-height: 100px;
+    text-align: left;
+    width: 200px;
     height: 100px;
-    background: #2d3b7f;
+    background: url(../img/side_background.png);
     color: #fff;
+    padding-left: 16px;
     border: 1px solid #dddddd;
     border-radius: 4px;
 }
 .board_side .list-group .active {
     background:#fff;
     color: #2d3b7f;
+    font-weight: bold;
 }
 
 

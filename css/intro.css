@@ -8,7 +8,6 @@
 	width: 180px;
 	background-color:white;
 }
-
 .sec-tit{
 	padding: 0;
 	border-color: black;
@@ -18,7 +17,6 @@
 	background-color: #2d3b7f;
 	color: white;
 }
-
 .mn-list{
 	list-style-type: none;
 	line-height: 1.7;
@@ -28,7 +26,6 @@
 	padding-left: 0;
 	text-align:left;
 }
-
 .mn-list li a{
 	display: block;
 	border-bottom: solid 1px #e5e5e5;
@@ -36,27 +33,32 @@
 	line-height: 35px;
 	padding-left: 13px;
 }
-
 a:link{
 	text-decoration: none;
 }
-
 .introlist{
 	padding-left: 20px;
 	line-height: 1;
 	/*list-style-type: none;*/
 	list-style-type: circle;
 }
-
 .introlist li{
 	line-height: 1.7;
 	font-size:16px;
 }
 
-.introfield{
-	position:absolute;
-	margin-left: 220px;
+/*content*/
+.board_title span {
+   font-size: 15px;
 }
+.introfield ul li {
+   text-align: left;
+}
+.introfield img {
+   margin-top: 20px;
+   margin-bottom: 60px;
+}
+
 
 .tb_02 {border-bottom:1px solid #000000;
 line-height:1.7;}
@@ -65,84 +67,84 @@ line-height:1.7;}
 .tb_02 tbody th{border-bottom:1px solid #e5e5e5 ;background:url('../images/ico_dot_02.jpg') #f7f7f7 20px 25px no-repeat ;text-align:center;font-size:18px;font-weight:500;padding:15px 15px 15px 15px; color:#232323;}
 .tb_02 tbody td{border-bottom:1px solid #e5e5e5;padding: 15px 10px 15px 20px;text-align:left;font-size:18px;color:#666666}
 
- 
- 
- .item_list_box ul {
-	padding-left: 0;
- }
- 
- .item_list_box li {
-    position: relative;
-    padding: 35px 35px 25px 210px;
-    border-bottom: 1px solid #e5e5e5;
-	border-top: 1px solid #e5e5e5;
-	list-style-type: none;
+
+
+.item_list_box ul {
+   padding-left: 0;
 }
 
- .item_list_box .li2{
-    position: relative;
-    padding: 15px 35px 15px 160px;
-    border-bottom: 1px solid #e5e5e5;
-	border-top: 1px solid #e5e5e5;
-	list-style-type: none;
+.item_list_box li {
+   position: relative;
+   padding: 35px 35px 25px 210px;
+   border-bottom: 1px solid #e5e5e5;
+   border-top: 1px solid #e5e5e5;
+   list-style-type: none;
 }
 
- .item_list_box .li3{
-    position: relative;
-    padding: 23px 35px 23px 237px;
-    border-bottom: 1px solid #e5e5e5;
-	border-top: 1px solid #e5e5e5;
-	list-style-type: none;
+.item_list_box .li2{
+   position: relative;
+   padding: 15px 35px 15px 160px;
+   border-bottom: 1px solid #e5e5e5;
+   border-top: 1px solid #e5e5e5;
+   list-style-type: none;
 }
- 
- .item_list_box .tit {
-    font-size: 20px;
-    color: #fff;
-    font-weight: 500;
-    line-height: 60px;
-    width: 173px;
-    height: 60px;
-    text-align: center;
-    position: absolute;
-    left: 0;
-    top: 35px;
-    background-color: #2d3b7f;
- }
- 
-  .item_list_box .tit2 {
-    font-size: 20px;
-    color: #fff;
-    font-weight: 500;
-    line-height: 60px;
-    width: 120px;
-    height: 60px;
-    text-align: center;
-    position: absolute;
-    left: 0;
-    top: 10px;
-    background-color: #2d3b7f;
- }
- 
-  .item_list_box .tit3 {
-    font-size: 20px;
-    color: #fff;
-    font-weight: 500;
-    line-height: 60px;
-    width: 200px;
-    height: 60px;
-    text-align: center;
-    position: absolute;
-    left: 0;
-    top: 17px;
-    background-color: #2d3b7f;
- }
- 
- .item_list_box .txt {
-    font-size: 16px;
-    color: #000000;
-    font-weight: 500;
-    line-height: 1;
-    margin-bottom: 8px;
+
+.item_list_box .li3{
+   position: relative;
+   padding: 23px 35px 23px 237px;
+   border-bottom: 1px solid #e5e5e5;
+   border-top: 1px solid #e5e5e5;
+   list-style-type: none;
+}
+
+.item_list_box .tit {
+   font-size: 20px;
+   color: #fff;
+   font-weight: 500;
+   line-height: 60px;
+   width: 173px;
+   height: 60px;
+   text-align: center;
+   position: absolute;
+   left: 0;
+   top: 35px;
+   background-color: #2d3b7f;
+}
+
+.item_list_box .tit2 {
+   font-size: 20px;
+   color: #fff;
+   font-weight: 500;
+   line-height: 60px;
+   width: 120px;
+   height: 60px;
+   text-align: center;
+   position: absolute;
+   left: 0;
+   top: 10px;
+   background-color: #2d3b7f;
+}
+
+.item_list_box .tit3 {
+   font-size: 20px;
+   color: #fff;
+   font-weight: 500;
+   line-height: 60px;
+   width: 200px;
+   height: 60px;
+   text-align: center;
+   position: absolute;
+   left: 0;
+   top: 17px;
+   background-color: #2d3b7f;
+}
+
+.item_list_box .txt {
+   font-size: 16px;
+   color: #000000;
+   font-weight: 500;
+   line-height: 1;
+   margin-bottom: 8px;
 }
 
 .item_list_box .exp {

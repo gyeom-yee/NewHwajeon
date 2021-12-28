@@ -34,6 +34,7 @@
 
     <!--게시판-->
     <link href="css/board.css" rel="stylesheet">
+    <link href="css/intro.css" rel="stylesheet">
 
     <!--Responsive Framework-->
     <link href="css/responsive.css" rel="stylesheet">
@@ -90,11 +91,11 @@
                         <!-- Collect the nav links, forms, and other content for toggling -->
                         <div class="collapse navbar-collapse zero_mp" id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav navbar-right main_menu">
-                                <li><a href="">화전도시재생 <span class="sr-only">(current)</span></a></li>
-                                <li><a href="">화전마을관리사회적협동조합</a></li>
-                                <li><a href="">문화/행사</a></li>
-                                <li><a href="">사업마당</a></li>
-                                <li><a href="./menu_5.html">열린마당</a></li>
+                                <li><a href="./menu_1_hwajeon1.html">화전도시재생</a></li>
+                                <li><a href="./menu_2_village1.html">화전마을관리사회적협동조합</a></li>
+                                <li><a href="./menu_3_event1.html">문화/행사</a></li>
+                                <li><a href="./menu_4_business1.html">사업마당</a></li>
+                                <li><a href="./menu_5_open1.html">열린마당</a></li>
                             </ul>
                         </div>
                         <!-- /.navbar-collapse -->
@@ -114,81 +115,77 @@
     <section id="board_main">
         <div class="board_side">
             <div class="list-group">
-                <h2 class="list-group-item-heading">열린마당</h2>
-                <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
-                    공지사항
+                <h3 class="list-group-item-heading no_drag">
+                    <span>About</span>
+                    화전도시재생
+                </h3>
+                <a href="./menu_1_hwajeon1.html" class="list-group-item list-group-item-action active" aria-current="true">
+                    도시재생이란
                 </a>
-                <a href="#" class="list-group-item list-group-item-action">언론보도</a>
-                <a href="#" class="list-group-item list-group-item-action">자유게시판</a>
-                <a href="#" class="list-group-item list-group-item-action">자료실</a>
+                <a href="./menu_1_hwajeon2.html" class="list-group-item list-group-item-action">화전도시재생사업</a>
+                <a href="./menu_1_hwajeon3.html" class="list-group-item list-group-item-action">현장지원센터</a>
             </div>
         </div>
         <div class="board_wrap">
             <div class="board_title">
-                <strong>공지사항</strong>
-                <p>공지사항을 빠르고 정확하게 안내해드립니다.</p>
+                <strong>화전도시재생</strong>
+                <span>> 도시재생이란</span>
             </div>
-            <div class="board_list_wrap">
-                <div class="board_list">
-                    <div class="top">
-                        <div class="num">번호</div>
-                        <div class="title">제목</div>
-                        <div class="writer">글쓴이</div>
-                        <div class="date">작성일</div>
-                        <div class="count">조회</div>
-                    </div>
-                    <div>
-                        <div class="num">5</div>
-                        <div class="title"><a href="view_board.html">글 제목이 들어갑니다.</a></div>
-                        <div class="writer">김이름</div>
-                        <div class="date">2021.1.15</div>
-                        <div class="count">33</div>
-                    </div>
-                    <div>
-                        <div class="num">4</div>
-                        <div class="title"><a href="view_board.html">글 제목이 들어갑니다.</a></div>
-                        <div class="writer">김이름</div>
-                        <div class="date">2021.1.15</div>
-                        <div class="count">33</div>
-                    </div>
-                    <div>
-                        <div class="num">3</div>
-                        <div class="title"><a href="view_board.html">글 제목이 들어갑니다.</a></div>
-                        <div class="writer">김이름</div>
-                        <div class="date">2021.1.15</div>
-                        <div class="count">33</div>
-                    </div>
-                    <div>
-                        <div class="num">2</div>
-                        <div class="title"><a href="view_board.html">글 제목이 들어갑니다.</a></div>
-                        <div class="writer">김이름</div>
-                        <div class="date">2021.1.15</div>
-                        <div class="count">33</div>
-                    </div>
-                    <div>
-                        <div class="num">1</div>
-                        <div class="title"><a href="view_board.html">글 제목이 들어갑니다.</a></div>
-                        <div class="writer">김이름</div>
-                        <div class="date">2021.1.15</div>
-                        <div class="count">33</div>
-                    </div>
-                </div>
-                <div class="board_page">
-                    <a href="#" class="bt first"><<</a>
-                    <a href="#" class="bt prev"><</a>
-                    <a href="#" class="num on">1</a>
-                    <a href="#" class="num">2</a>
-                    <a href="#" class="num">3</a>
-                    <a href="#" class="num">4</a>
-                    <a href="#" class="num">5</a>
-                    <a href="#" class="bt next">></a>
-                    <a href="#" class="bt last">>></a>
-                </div>
-                <div class="bt_wrap">
-                    <a href="write_board.html" class="on">등록</a>
-                    <!--<a href="#">수정</a>-->
+
+            <div class="introfield">
+                <h2>도시재생의 정의</h2>
+                <ul class="introlist">
+                    <li>인구의 감소, 산업구조의 변화, 도시의 무분별한 확장, 주거환경의 노후 등으로 쇠퇴하는 도시를 지역역량의 강화,</li>
+                    <li>새로운 기능의 도입·창출 및 지역자원의 활용을 통하여 경제·사회·물리·환경적으로 활성화시키는 것을 의미합니다.</li>
+                    <li>[도시재생 활성화 및 지원에 관한 특별법 제2조]</li>
+                </ul>
+                <img class="introimg" src="contents_images/img_0201_01.jpg" alt="도시재생의 정의">
+                <h2>정비사업과 도시재생의 차이</h2>
+                <img class="introimg" src="contents_images/img_0201_02.jpg" alt="정비사업과 도시재생의 차이">
+                <h2>도시재생뉴딜사업이란?</h2>
+                <ul class="introlist">
+                    <li>2017년 부터 시작한 도시재생뉴딜사업은 그 동안 진행해 온 ‘도시재생사업의 미흡한 부분을 보완,</li>
+                    <li>도시쇠퇴에 대응하여 물리적 환경개선(H/W)과 주민의 역량강화(S/W)를 통해</li>
+                    <li>주거복지 실현, 도시 경쟁력 회복, 사회 통합, 일자리 창출을 달성하여 도시를 “종합재생”하기 위한 사업입니다.</li>
+                </ul>
+                <img class="introimg" src="contents_images/img_0201_03.jpg" alt="도시재생뉴딜사업이란">
+                <h2>사업유형</h2>
+                <div class="item_list_box">
+                    <ul>
+                        <li>
+                            <div class="tit">우리동네 살리기</div>
+                            <div class="txt">사업기간 : 3년, 규모 : 5만㎡이하</div>
+                            <div class="exp">생활권 내에 도로 등 기초 기반시설은 갖추고 있으나 인구유출, 주거지 노후화로 활력을 상실한 지역에 대해 소규모주택 정비사업 및
+                                생활편의시설 공급 등으로마을공동체 회복시키는 사업</div>
+                        </li>
+                        <li>
+                            <div class="tit">주거지 지원형</div>
+                            <div class="txt">사업기간 : 4년, 규모 : 5만~10만㎡</div>
+                            <div class="exp">원활한 주택개량을 위해 골목길 정비 등 소규모 주택정비의 기반을 마련하고,소규모주택 정비사업 및 생활편의시설 공급 등으로주거지 전반의
+                                여건을 개선하는 사업</div>
+                        </li>
+                        <li>
+                            <div class="tit">일반 근린형</div>
+                            <div class="txt">사업기간 : 4년, 규모 : 10만~15만㎡</div>
+                            <div class="exp">주거지와 골목상권이 혼재된 지역을 대상으로 골목상권과 무인택배 등 주민 체감형시설 개보수를 지원하여 공동체를 활성화하고 영세상권을
+                                보호하는 사업</div>
+                        </li>
+                        <li>
+                            <div class="tit">중심 시가지형</div>
+                            <div class="txt">사업기간 : 5년, 규모 : 20만㎡</div>
+                            <div class="exp">역사·문화·관광과의 연계를 통해 상권 경쟁력을 확보하고 청년·소상공인 창업 인큐베이팅, 사회적경제 주체 육성 등을 지원하는 사업
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tit">경제 기반형</div>
+                            <div class="txt">사업기간 : 6년, 규모 : 50만㎡</div>
+                            <div class="exp">국가·도시 차원의 경제적 쇠퇴가 심각한 지역을 대상으로복합 앵커시설 구축 등 新경제거점을 형성하고 일자리를 창출하는 사업</div>
+                        </li>
+                    </ul>
                 </div>
             </div>
+
+            <br>
         </div>
     </section>
     <!--End board_main Section-->
