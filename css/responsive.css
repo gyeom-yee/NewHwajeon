@@ -497,6 +497,9 @@
         right: 5px;
     }
 
+    .board_side {
+        display: none;
+    }
     .board_wrap {
         width: 100%;
         min-width: 320px;
@@ -971,6 +974,9 @@
         line-height: 23px;
         bottom: 5px;
         right: 5px;
+    }
+    .board_side {
+        display: none;
     }
     .board_wrap {
         width: 100%;

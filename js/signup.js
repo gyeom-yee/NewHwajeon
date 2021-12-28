@@ -2,7 +2,13 @@ window.ouser_id = document.getElementById("ouser_id");
 window.nick = document.getElementById("nick");
 window.psw = document.getElementById("opassword");
 window.pswc = document.getElementById("rptpassword");
-window.pswc = document.getElementById("email");
+window.email = document.getElementById("email");
+
+window.id_error = document.getElementById("ouser_id_error");;
+window.nick_error = document.getElementById("nick_error");;
+window.opw_error = document.getElementById("opw_error");;
+window.pw_match_error = document.getElementById("pw_match_error");;
+window.email_error = document.getElementById("email_error");;
 
 ouser_id.onkeyup = OuserIdCheck;
 nick.onkeyup = nickCheck;
@@ -23,18 +29,18 @@ window.format = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,1500}$/;
 function OuserIdCheck() {
 	if(ouser_id.value.length > 0) {
 		if(ouser_id.value.length < 3) {
-			document.getElementById("ouser_id_error").style.color = "red";
-			document.getElementById("ouser_id_error").innerHTML = "최소 3자 이상의 아이디를 입력해주세요.";
+			id_error.style.color = "red";
+			id_error.innerHTML = "최소 3자 이상의 아이디를 입력해주세요.";
 			valid_id = false;
 		}
 		else {
-			document.getElementById("ouser_id_error").style.color = "green";
-			document.getElementById("ouser_id_error").innerHTML = "사용 가능한 아이디입니다.";
+			id_error.style.color = "green";
+			id_error.innerHTML = "사용 가능한 아이디입니다.";
 			valid_id = true;
 		}
 	}
 	else {
-		document.getElementById("ouser_id_error").innerHTML = "";
+		id_error.innerHTML = "";
 		valid_id = false;
 	}
 }
@@ -42,18 +48,18 @@ function OuserIdCheck() {
 function nickCheck() {
 	if(nick.value.length > 0) {
 		if(nick.value.length < 2) {
-			document.getElementById("nick_error").style.color = "red";
-			document.getElementById("nick_error").innerHTML = "최소 2자 이상의 닉네임을 입력해주세요.";
+			nick_error.style.color = "red";
+			nick_error.innerHTML = "최소 2자 이상의 닉네임을 입력해주세요.";
 			valid_nick = false;
 		}
 		else {	
-			document.getElementById("nick_error").style.color = "green";
-			document.getElementById("nick_error").innerHTML = "사용 가능한 닉네임입니다.";
+			nick_error.style.color = "green";
+			nick_error.innerHTML = "사용 가능한 닉네임입니다.";
 			valid_nick = true;
 		}
 	}
 	else {
-		document.getElementById("nick_error").innerHTML = "";
+		nick_error.innerHTML = "";
 		valid_nick = false;
 	}
 }
@@ -61,23 +67,23 @@ function nickCheck() {
 function opasswordCheck() {
 	if(psw.value.length > 0) {
 		if(psw.value.length < 6 && psw.value.length > 0) {
-			document.getElementById("opw_error").style.color = "red";
-			document.getElementById("opw_error").innerHTML = "최소 6자 이상의 비밀번호를 입력해주세요.";
+			opw_error.style.color = "red";
+			opw_error.innerHTML = "최소 6자 이상의 비밀번호를 입력해주세요.";
 			valid_pw = false;
 		}
 		else if(psw.value.match(format)) {
-			document.getElementById("opw_error").style.color = "green";
-			document.getElementById("opw_error").innerHTML = "사용 가능한 비밀번호입니다.";
+			opw_error.style.color = "green";
+			opw_error.innerHTML = "사용 가능한 비밀번호입니다.";
 			valid_pw = true;
 		}
 		else {
-			document.getElementById("opw_error").style.color = "red";
-			document.getElementById("opw_error").innerHTML = "비밀번호는 영어 소문자, 숫자, 특수문자로 구성되어야 합니다.";
+			opw_error.style.color = "red";
+			opw_error.innerHTML = "비밀번호는 영어 소문자, 숫자, 특수문자로 구성되어야 합니다.";
 			valid_pw = false;
 		}
 	}
 	else {
-		document.getElementById("opw_error").innerHTML = "";
+		opw_error.innerHTML = "";
 		valid_pw = false;
 	}
 }
@@ -85,18 +91,18 @@ function opasswordCheck() {
 function opasswordMatch() {
 	if(pswc.value.length > 0) {
 		if(pswc.value != psw.value) {
-			document.getElementById("pw_match_error").style.color = "red";
-			document.getElementById("pw_match_error").innerHTML = "비밀번호가 일치하지 않습니다.";
+			pw_match_error.style.color = "red";
+			pw_match_error.innerHTML = "비밀번호가 일치하지 않습니다.";
 			valid_pw2 = false;
 		}
 		else {
-			document.getElementById("pw_match_error").style.color = "green";
-			document.getElementById("pw_match_error").innerHTML = "비밀번호가 일치합니다.";
+			pw_match_error.style.color = "green";
+			pw_match_error.innerHTML = "비밀번호가 일치합니다.";
 			valid_pw2 = true;
 		}
 	}
 	else {
-		document.getElementById("pw_match_error").innerHTML = "";
+		pw_match_error.innerHTML = "";
 		valid_pw2 = false;
 	}
 }
@@ -111,18 +117,18 @@ const validateEmail = (email) => {
 function emailCheck() {
 	if(email.value.length > 0) {
 		if(!validateEmail(email.value)) {
-			document.getElementById("email_error").style.color = "red";
-			document.getElementById("email_error").innerHTML = "이메일 형식을 확인해주세요.";
+			email_error.style.color = "red";
+			email_error.innerHTML = "이메일 형식을 확인해주세요.";
 			valid_email = false;
 		}
 		else {	
-			document.getElementById("email_error").style.color = "green";
-			document.getElementById("email_error").innerHTML = "사용 가능한 이메일입니다.";
+			email_error.style.color = "green";
+			email_error.innerHTML = "사용 가능한 이메일입니다.";
 			valid_email = true;
 		}
 	}
 	else {
-		document.getElementById("email_error").innerHTML = "";
+		email_error.innerHTML = "";
 		valid_email = false;
 	}
 }

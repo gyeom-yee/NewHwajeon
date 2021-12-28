@@ -778,15 +778,17 @@ li.fw-flash-message {
 #footer {background-color: #1a1c20;}
 #footer div.ft_top {
     max-width: 1140px;
+    height: 200px;
     display: flex;
     justify-content: space-between;
-    padding: 16px;
+    padding: 27px;
     margin: 0 auto;
 }
 #footer div.ft_top .sec_r ul{
     display: flex;
     list-style-type: none;
     padding-left: 0;
+    margin-bottom: 40px;
 }
 
 #footer div.ft_top .sec_r ul li {padding-right: 16px;}
