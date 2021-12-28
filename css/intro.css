@@ -223,6 +223,12 @@ line-height:1.7;}
    text-align: center;
 }
 
+img.collectiveimg{
+	width: 210px;
+	height: 200px;
+	object-fit: cover;
+}
+
 .introtable2 th{
    font-weight: bold;
    padding: 0;
