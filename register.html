@@ -119,30 +119,40 @@
                             <div class="reg-header">
                                 <h2>회원가입</h2>
                                 <p>계정이 이미 있는 경우에는 <a href="./login.html" class="color-green">로그인</a>해주세요. </p>
+                                <p>가입 후 아이디는 변경할 수 없습니다.</p>
                             </div>
                             <div class="row">
-                                <div class="col-sm-12">
+                                <div class="col-sm-6">
                                     <label for="ouser_id">아이디</label>
-                                    <input type="text" id="ouser_id" placeholder="" name="ouser_id"
-                                        class="form-control margin-bottom-20" value="" autocomplete="off">
+                                    <input type="text" id="ouser_id" placeholder="" name="ouser_id" class="form-control margin-bottom-20" value="" autocomplete="off">
+                                    <p id="ouser_id_error" class="errormessage"></p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <label for="nick">닉네임</label>
+                                    <input type="text" id="nick" placeholder="" name="nick" class="form-control margin-bottom-20" autocomplete="off">
+                                    <p id="nick_error" class="errormessage"></p>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-sm-6">
                                     <label for="opassword">비밀번호</label>
-                                    <input type="password" id="opassword" placeholder="" name="opassword"
-                                        class="form-control margin-bottom-20" autocomplete="off">
+                                    <input type="password" id="opassword" placeholder="" name="opassword" class="form-control margin-bottom-20" autocomplete="off">
+                                    <p id="opw_error" class="errormessage"></p> 
                                 </div>
                                 <div class="col-sm-6">
                                     <label for="rptpassword">비밀번호 (확인)</label>
-                                    <input type="password" id="rptpassword" placeholder="" name="rptpassword"
-                                        class="form-control margin-bottom-20" autocomplete="off">
-                                </div>
+                                    <input type="password" id="rptpassword" placeholder="" name="rptpassword" class="form-control margin-bottom-20" autocomplete="off">
+                                    <p id="pw_match_error" class="errormessage"></p>
+                                    </div>
                             </div>
                             <div class="row">
-                                <div class="col-sm-12"><label for="email">이메일</label><input type="text" id="email"
-                                        placeholder="" name="email" class="form-control margin-bottom-20" value=""
-                                        autocomplete="off"></div>
+                                <div class="col-sm-12">
+                                    <label for="email">이메일</label>
+                                    <input type="text" id="email"placeholder="" name="email" class="form-control margin-bottom-20" value=""autocomplete="off">
+                                    <p id="email_error" class="errormessage"></p>
+                                </div>
                             </div>
                             <hr>
                             <div class="row">
@@ -224,6 +234,7 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- Custom JavaScript-->
     <script src="js/main.js"></script>
+    <script src="js/signup.js" type="text/javascript"></script>
 </body>
 
 </html>

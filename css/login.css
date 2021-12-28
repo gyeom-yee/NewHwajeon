@@ -2,7 +2,9 @@
     font-size: 13px;
     line-height: 1.6;
 }
-#register .container form input {
+
+#ouser_id_error, #nick_error, #opw_error, #pw_match_error, #email_error {
+    font-size: 10px;
     margin-bottom: 20px;
 }
 
